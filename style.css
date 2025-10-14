@@ -66,24 +66,34 @@
    h1 img { margin-right: -15px;}
 
    nav ul li a {
-     font: 700 17px var(--ff);
-    color: #333333;   padding: 5px 5px 5px 5px;
+     font: 500 17px var(--ff);
+    color:  #fff ;   padding: 5px 5px 5px 5px;
     background-color: transparent; border-radius: 5px;
+    margin-right: 20px;
    }
    .nav-btn{
-    background-color:var(--primary-brown);
-    color: #ffffff;
-    margin-left: 10px;
+    display: inline-block;
+    color: #5c4033;
+    font-weight: 500;
+    background-color: #e0c097;
+    text-decoration: none;
+    padding: 10px 20px ;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-top: -2px;
    }
   
-  .hero-container{  margin-bottom: 80px; padding-bottom: 30px;}
+  .hero-container{  margin-bottom: 80px; padding-top: 50px; padding-bottom: 100px; }
     
    .pg1-t h2{
-    font:700 85px/90px var(--ff);
+    margin-top: 20px;
+    font:700 70px/80px var(--ff);
+    color: #e0c097;
    }
    .pg1-t p {
     font: 500 30px/40px var(--ff);
     margin: 20px 0px 20px 0px;
+    color: #e0c097;
    }
    .pg1-t .p1-b1{ 
     background-color: var(--primary-brown); color: #ffffff;
@@ -108,7 +118,8 @@
     }
 
  .pg2-t h2{
-  font: 600 80px var(--ff);
+  font: 600 60px var(--ff);
+  margin-left: 10px;
  }
 .pg2-t .know{font: 600 40px var(--ff); margin: 10px;}
 .pg2-t h3{ 
@@ -122,6 +133,10 @@
 
  /* wrap-3 start  */
 
+ .wrap-3{
+  padding: 60px 0 ;
+ }
+
 .chai-pricing-section {
   background: #fff8f2;
   padding: 60px 0;
@@ -129,8 +144,8 @@
   text-align: center;
 }
 
-.pricing-header h1 {
-  font-size: 2.5rem;
+.pricing-header h2 {
+  font-size: 1rem;
   color: #c65a00;
   margin-bottom: 10px;
 }
