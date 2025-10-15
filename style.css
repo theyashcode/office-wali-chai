@@ -244,12 +244,6 @@
   background: #ffb15e;
 }
 
-@media (max-width: 900px) {
-  .pricing-row {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 /* wrap-3 end  */
 
@@ -300,12 +294,6 @@
    background-color: #c65a00;
 }
 
-/* Responsive: Column stacking on small screens */
-@media (max-width: 768px) {
-  .col-6 {
-    grid-column: span 12;
-  }
-}
 
 /* wrap-5 */
 .team-section {
@@ -370,19 +358,7 @@
   background-color: #c65a00;
 }
 
-/* Responsive: stack columns on smaller screens */
-@media (max-width: 900px) {
-  .col-4 {
-    grid-column: span 12;
-  }
-}
-
 /* wrap-5 end  */
-
-
-
-
-
 
 
 /* footer */
@@ -436,12 +412,108 @@
    color: #fff;
 }
 
-/* Responsive */
+ /* responsive  */
 
+ @media (max-width: 992px) {
+  header {
+    text-align: center;
+  }
 
-@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pg1-t h2 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .pg1-t p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .pg1-img img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+/* Mobile  */
+
+@media (max-width: 600px) {
+
+  .row {
+    grid-template-columns: 1fr !important;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pg1-t {
+    text-align: center;
+  }
+
+  .pg1-t h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .pg1-t p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .pg1-t .p1-b1, 
+  .pg1-t .p1-b2 {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .pg1-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .pg2-t h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .pg2-t .story {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .team-section {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    width: 90%;
+    margin: auto;
+  }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
   }
 }
+
+/* Responsive end */
