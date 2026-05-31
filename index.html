@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codewithyash</title>
-
-     <link rel="stylesheet" href="style.css">
-
+    <title>Office Wali Chai — Premium Tea Experience</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="hd">
-                  <div class="row">
+    <!-- ═══ WRAP 1 : HERO ═══ -->
+    <div class="wrap-1" id="home">
+        <div class="container">
+            <header>
+                <div class="row">
                     <div class="col-3">
-                      <div class="logo">
-                        <img src="image/coffe-svgrepo-com.svg" alt="coffe">
-                        <h1>Office Wali Chai</h1>
-                      </div>
+                        <div class="logo">
+                            <span class="logo-icon">☕</span>
+                            <span class="logo-text">Office Wali Chai</span>
+                        </div>
                     </div>
                     <div class="col-9">
-                      <nav>
-                        <ul class="flex align-right">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="menu.html">Menu</a></li>
-                          <li><a href="#">How Its Work</a></li>
-                          <li><a href="pricing.html" class="nav-btn">Pricing</a></li>
-                        </ul>
-                      </nav>
+                        <nav>
+                            <ul class="flex align-right collapse" id="navLinks">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#services">Menu</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#why-us">Why Us</a></li>
+                                <li><a href="#testimonials">Reviews</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+                        </nav>
                     </div>
-                  </div>
-    </header>
+                </div>
+            </header>
 
-    <div class="wrap1">
-        <div class="container">
-                        
-            <div class="hero-container">
+            <div class="banner" role="banner">
                 <div class="row">
-                    <div class="col-6">
-                      <div class="pg1-t">
-                          <h2>Chai at your Desk-Fresh Fast & Kadak!</h2>
-                        <p>Office se nikle bina enjoy kro apni favourite chai har jagah</p>
-                        <a href="" class="p1-b1">Order Now</a>
-                        <a href="" class="p1-b2">Become Venoder</a>
-                      </div>
+                    <div class="col-6 col-p-12">
+                        <h2>Your Daily Cup of <span class="highlight">Comfort</span>, Delivered with Heart</h2>
+                        <p>From the first sip of morning chai to the last cup of the day — Office Wali Chai brings you
+                            authentic, freshly brewed teas crafted with real ingredients and zero compromise on taste.</p>
+                        <div class="hero-btns flex" style="gap:1rem; flex-wrap:wrap;">
+                            <a href="#services" class="btn-primary">EXPLORE MENU</a>
+                            <a href="#contact" class="btn-outline">ORDER NOW</a>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <div class="pg1-img">
-                            <img src="image/pg1.webp" alt="take-it">
+                    <div class="col-6 col-p-12 hero-img-wrap">
+                        <div class="hero-visual">
+                            <div class="tea-cup">☕</div>
+                            <div class="steam s1"></div>
+                            <div class="steam s2"></div>
+                            <div class="steam s3"></div>
+                            <div class="floating-badge b1">🍃 Fresh Ingredients</div>
+                            <div class="floating-badge b2">⚡ Quick Delivery</div>
+                            <div class="floating-badge b3">❤️ Made with Love</div>
                         </div>
                     </div>
                 </div>
@@ -54,183 +64,422 @@
         </div>
     </div>
 
-    <div class="wrap2">
+    <!-- ═══ WRAP 2 : MAIN CONTENT ═══ -->
+    <div class="wrap-2">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                  <div class="pg2-t">
-                    <h2>About Us</h2>
-                    <p class="know">Know more about Office Chai </p>
-                    <h3>Our Story </h3>
-                    <p class="story">Three friends Yash, Saim, and Yashwant  met at Tech Altum Institute. After some conversations, we became good friends. Yash was very good at coding.
-                    Yashwant was weak in studies, but he was hardworking and always ready to learn.
-                    Saim was also good at coding, and he and Yash started doing combined studies.
-                    One day, while drinking a cup of tea together, Yash got a thought:
-                    “How do office workers enjoy tea in their busy schedules?”
-                    That one thought gave us an idea Office Chai.
-                    We decided to create a website for it. At first, we were scared, thinking whether it would work or not. But then we believed in ourselves and started building the Office Chai Website </p>
-                  </div>
 
+            <!-- SERVICES / MENU -->
+            <section class="services" id="services">
+                <div class="heading text-center">
+                    <h2>OUR MENU</h2>
+                    <p>Brewed Fresh, Every Time</p>
+                    <p>Choose your perfect cup</p>
                 </div>
-                <div class="col-6">
-                    <img class="img2" src="image/pg2-img.webp" alt="Chai">
+                <div class="row">
+                    <div class="col-3 col-t-6 col-p-12">
+                        <div class="servicebox s1">
+                            <div class="service-icon">🍵</div>
+                            <h3>Classic Chai</h3>
+                            <p>Our signature ginger-cardamom chai brewed with full-cream milk and premium Assam tea leaves. The one that started it all.</p>
+                            <a href="#contact">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-12">
+                        <div class="servicebox s2">
+                            <div class="service-icon">☕</div>
+                            <h3>Masala Chai</h3>
+                            <p>A bold, spiced blend with cloves, cinnamon, black pepper and ginger — the kind that wakes you up and keeps you going.</p>
+                            <a href="#contact">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-12">
+                        <div class="servicebox s1">
+                            <div class="service-icon">🌿</div>
+                            <h3>Green Tea</h3>
+                            <p>Light, fresh and full of antioxidants. Our green tea selection includes tulsi, lemon ginger and mint varieties.</p>
+                            <a href="#contact">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-12">
+                        <div class="servicebox s1">
+                            <div class="service-icon">🧋</div>
+                            <h3>Special Kulhad Chai</h3>
+                            <p>Served in traditional clay kulhads for that earthy aroma and authentic taste that no paper cup can ever match.</p>
+                            <a href="#contact">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATS -->
+            <div class="info">
+                <div class="row">
+                    <div class="col-3 col-t-6 col-p-6">
+                        <div class="info-item">
+                            <p class="counter" data-target="2400">0</p>
+                            <p>CUPS SERVED DAILY</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-6">
+                        <div class="info-item">
+                            <p class="counter" data-target="850">0</p>
+                            <p>HAPPY CUSTOMERS</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-6">
+                        <div class="info-item">
+                            <p class="counter" data-target="12">0</p>
+                            <p>TEA VARIETIES</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-6">
+                        <div class="info-item">
+                            <p class="counter" data-target="4">0</p>
+                            <p>YEARS OF BREWING</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- ABOUT US -->
+            <section class="about-us" id="about">
+                <div class="row">
+                    <div class="col-6 col-t-12">
+                        <div class="heading">
+                            <h2>FEW WORDS ABOUT US</h2>
+                            <p>More Than Just</p>
+                            <p>a Cup of Tea</p>
+                        </div>
+                        <p class="text">Office Wali Chai was born out of a simple frustration — why is good chai so hard to find at work? We started in 2020 with a single stall near a Gurugram office complex, and today we serve thousands of cups daily to offices, students and chai lovers across the city.</p>
+                        <p class="text" style="margin-top:10px;">Every cup we make uses real milk, hand-picked spices and no artificial flavours — because your break deserves better than a teabag in hot water.</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list">
+                                    <li>100% Natural Ingredients</li>
+                                    <li>No Artificial Flavours</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list">
+                                    <li>Fresh Milk Every Day</li>
+                                    <li>Hygienic Preparation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-t-12 about-visual-wrap">
+                        <div class="about-visual">
+                            <div class="about-big-emoji">☕</div>
+                            <div class="about-tag t1">Est. 2020</div>
+                            <div class="about-tag t2">Gurugram, HR</div>
+                            <div class="about-tag t3">🌿 100% Natural</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHY US TAB SECTION -->
+            <section class="lovework" id="why-us">
+                <div class="heading text-center">
+                    <h2>WHY CHOOSE US</h2>
+                    <p>What Makes Our Chai Different</p>
+                </div>
+                <div class="tab">
+                    <ul class="flex">
+                        <li class="flex active" data-tab="0">
+                            <a class="vertical" href="#">Our Chai</a>
+                            <div class="contant">
+                                <div class="tab-visual">🍵</div>
+                                <h3>Crafted with Real Ingredients</h3>
+                                <p class="text">We never compromise on quality. Every batch of chai is brewed fresh using whole spices — real cardamom, fresh ginger, cinnamon sticks and premium loose-leaf Assam tea. No shortcuts, no powder mixes, no artificial anything. Just honest chai the way your dadi made it.</p>
+                                <a class="more" href="#contact">Order a Cup</a>
+                            </div>
+                        </li>
+                        <li class="flex" data-tab="1">
+                            <a class="vertical" href="#">Our Story</a>
+                            <div class="contant">
+                                <div class="tab-visual">🏪</div>
+                                <h3>Started from One Stall, Now Serving Thousands</h3>
+                                <p class="text">It started with one small stall, one gas burner and one dream — to serve the best chai in Gurugram. Four years later, Office Wali Chai has become a daily ritual for hundreds of offices and thousands of chai lovers. We grew not through ads but through word of mouth — because good chai speaks for itself.</p>
+                                <a class="more" href="#about">Read More</a>
+                            </div>
+                        </li>
+                        <li class="flex" data-tab="2">
+                            <a class="vertical" href="#">Our Promise</a>
+                            <div class="contant">
+                                <div class="tab-visual">🤝</div>
+                                <h3>Hygiene, Freshness & Consistency — Every Single Cup</h3>
+                                <p class="text">We follow strict hygiene standards in every cup we serve. Fresh milk sourced daily, spices stored properly, and utensils cleaned after every batch. Whether you order your first cup or your hundredth, the taste will always be exactly what you expect — perfectly brewed, every time.</p>
+                                <a class="more" href="#contact">Get in Touch</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <section class="PROJECTS" id="testimonials">
+                <div class="heading text-center">
+                    <h2>WHAT PEOPLE SAY</h2>
+                    <p>Real reviews from real chai lovers</p>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-t-12">
+                        <div class="review">
+                            <div class="rbody">
+                                <div class="quote-icon">❝</div>
+                                <p>"Honestly the best chai I've had outside of home. The masala chai is perfectly spiced — not too strong, not too mild. I order two cups every single morning without fail."</p>
+                                <div class="rating">
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                </div>
+                                <div class="reviewer-avatar woman">PR</div>
+                            </div>
+                            <div class="rfooter">
+                                <h3>Priya Rathore</h3>
+                                <p>Software Engineer, Gurugram</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-12">
+                        <div class="review">
+                            <div class="rbody">
+                                <div class="quote-icon">❝</div>
+                                <p>"We get chai delivered to our entire office floor every day. The consistency is unreal — same taste, same quality, never late. Our team won't start the day without it now."</p>
+                                <div class="rating">
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                </div>
+                                <div class="reviewer-avatar woman">AK</div>
+                            </div>
+                            <div class="rfooter">
+                                <h3>Arjun Kapoor</h3>
+                                <p>Operations Manager, DLF Cyber City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-12">
+                        <div class="review">
+                            <div class="rbody">
+                                <div class="quote-icon">❝</div>
+                                <p>"The kulhad chai is an experience on its own. The earthen smell, the warmth in your hands — it's nostalgia in a cup. I drag all my colleagues here during lunch breaks."</p>
+                                <div class="rating">
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span class="fill">&starf;</span>
+                                    <span>&starf;</span>
+                                </div>
+                                <div class="reviewer-avatar woman">NS</div>
+                            </div>
+                            <div class="rfooter">
+                                <h3>Neha Sharma</h3>
+                                <p>HR Executive, Sector 44</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section class="contact-section" id="contact">
+                <div class="row">
+                    <div class="col-6 col-t-12">
+                        <div class="heading">
+                            <h2>GET IN TOUCH</h2>
+                            <p>Order Your Cup</p>
+                            <p>or Just Say Hello</p>
+                        </div>
+                        <p class="text">Whether you want to place a bulk order for your office, give feedback, or just want to know today's special — we're always just a message away. We typically respond within 30 minutes.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="ci">📍</span>
+                                <div>
+                                    <strong>Find Us</strong>
+                                    <p>Near DLF Cyber Hub, Sector 24, Gurugram, Haryana</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="ci">📞</span>
+                                <div>
+                                    <strong>Call Us</strong>
+                                    <p>+91 98765 00000 (9am – 9pm, Mon–Sat)</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="ci">✉️</span>
+                                <div>
+                                    <strong>Email Us</strong>
+                                    <p>hello@officewalachai.in</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="ci">🕐</span>
+                                <div>
+                                    <strong>Hours</strong>
+                                    <p>Mon – Sat: 7:00 AM – 9:00 PM<br>Sunday: 8:00 AM – 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-t-12">
+                        <div class="contact-form-wrap">
+                            <h3>Send us a Message</h3>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" placeholder="e.g. Rahul Sharma" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="+91 98765 XXXXX" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message / Order</label>
+                                    <textarea id="message" rows="4" placeholder="e.g. I need 20 cups of masala chai delivered to office Block B daily..."></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Send Message ☕</button>
+                                <p class="form-success" id="formSuccess">✅ Message sent! We'll get back to you within 30 minutes.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
 
+    <!-- ═══ WRAP 3 : FOOTER ═══ -->
     <div class="wrap-3">
-  <div class="chai-pricing-section">
-  <div class="pricing-header">
-    <h2>Special Chai Plans</h2>
-    <p>Choose from our fresh, kadak & flavorful chai combos — made just for you!</p>
-  </div>
-
-  <div class="pricing-row">
-
-    <!-- Basic Plan -->
-    <div class="pricing-card">
-      <div class="card-header">
-        <h3>Basic Kadak</h3>
-      </div>
-      <div class="card-body">
-        <h2>₹20 <span>/cup</span></h2>
-        <ul>
-          <li>Simple Strong Chai</li>
-          <li>Freshly Brewed</li>
-          <li>Takeaway Available</li>
-          <li>Perfect for office breaks</li>
-        </ul>
-        <a href="#" class="btn">Order Now</a>
-      </div>
-    </div>
-
-    <!-- Pro Plan -->
-    <div class="pricing-card active">
-      <div class="card-header highlight">
-        <h3>Elaichi Special</h3>
-      </div>
-      <div class="card-body">
-        <h2>₹30 <span>/cup</span></h2>
-        <ul>
-          <li>Elaichi Flavour</li>
-          <li>Light & Refreshing</li>
-          <li>Instant Delivery</li>
-          <li>Perfect Morning Start</li>
-        </ul>
-        <a href="#" class="btn highlight-btn">Get This Chai</a>
-      </div>
-    </div>
-
-    <!-- Premium Plan -->
-    <div class="pricing-card">
-      <div class="card-header">
-        <h3>Boss Combo</h3>
-      </div>
-      <div class="card-body">
-        <h2>₹50 <span>/cup</span></h2>
-        <ul>
-          <li>Chai + Biscuit + Smile 😄</li>
-          <li>VIP Service</li>
-          <li>Free Refill</li>
-          <li>Office Delivery</li>
-        </ul>
-        <a href="#" class="btn">Reserve Now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-    </div>
-    
-   <div class="wrap-4">
-   <div class="container">
-     <div class="row">
-      <div class="col-6">
-        <div class="custom-card dark-card">
-          <h2>Freshly Brewed Kadak Chai</h2>
-          <p>Enjoy a strong, flavorful cup of chai at your desk. Perfect for those busy office hours when you need a quick energy boost.</p>
-          <a href="menu.html" class="btn dark-btn">Order Now</a>
-        </div>
-      </div>
-    
-      <div class="col-6">
-        <div class="custom-card light-card">
-          <h2>Special Elaichi Chai</h2>
-          <p>Add a hint of elaichi to your chai for a refreshing taste. Light, aromatic, and perfect to start your day</p>
-          <a href="menu.html" class="btn light-btn">Try This Chai</a>
-        </div>
-      </div>
-    </div>
-   </div>
-   </div>
-
-   <div class="wrap-5">
-    <div class="container">
-      <div class="row team-section">
-  <!-- Member 1: Yash -->
-  <div class="col-4">
-    <div class="team-card">
-      <img src="image/yash-img.webp" alt="Yash" class="team-img">
-      <h2>Yash</h2>
-      <p>Lead Developer & Chai Enthusiast. Coding wizard and creator of Office Wali Chai concept.</p>
-      <a href="https://www.instagram.com/023.ysxh?igsh=MTI1YnBmYW51Z2dhYg==" class="btn team-btn">View Profile</a>
-    </div>
-  </div>
-
-  <!-- Member 2: Saim -->
-  <div class="col-4">
-    <div class="team-card">
-      <img src="image/sam-img.webp" alt="Saim" class="team-img">
-      <h2>Saim</h2>
-      <p>Co-Developer & Idea Generator. Strong in coding and always ready to experiment with new features.</p>
-      <a href="https://www.instagram.com/lord_voldemort_hell?igsh=MWNmZTlxZXYxejI0Zg==" class="btn team-btn">View Profile</a>
-    </div>
-  </div>
-
-  <!-- Member 3: Yashwant -->
-  <div class="col-4">
-    <div class="team-card">
-      <img src="image/yashwant-img.webp" alt="Yashwant" class="team-img">
-      <h2>Yashwant</h2>
-      <p>Backend Support & Learner. Hardworking, detail-oriented, and ensures smooth operation of the website.</p>
-      <a href="https://www.instagram.com/yashthakur8010?igsh=MXNlcTBxcmViY2RsMw==" class="btn team-btn">View Profile</a>
-    </div>
-  </div>
-</div>
-    </div>
-   </div>
-  
-    <footer class="site-footer">
-        <div class="container footer-container">
-            
-            <div class="footer-about">
-                <h3>Codewithyash</h3>
-                <p>Building creative and responsive web projects with passion and perfection.</p>
-            </div>
-
-            <div class="footer-contact">
-                <h3>Contact Info</h3>
-                <p><strong>Phone:</strong> <a href="tel:8750298789">+91 8750298789</a></p>
-                <p><strong>Email:</strong> <a href="mailto:112233yashraj@gmail.com">112233yashraj@gmail.com</a></p>
-            </div>
-
-            <div class="footer-social">
-                <h3>Follow Me</h3>
-                <a href="https://github.com/theyashcode" target="_blank">GitHub</a> |
-                <a href="https://www.instagram.com/023.ysxh?igsh=MTI1YnBmYW51Z2dhYg==" target="_blank">Instagram</a> |
-                <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-4 col-t-12">
+                        <div class="footer-brand">
+                            <span style="font-size:2rem;">☕</span>
+                            <p style="margin-top:10px; font:600 18px var(--ff); color:#fff;">Office Wali Chai</p>
+                        </div>
+                        <p style="margin-top:15px;">Serving warmth, one cup at a time. Your daily chai break — made better, every single day.</p>
+                    </div>
+                    <div class="col-3 col-t-6 col-p-12">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="#services">Classic Chai</a></li>
+                            <li><a href="#services">Masala Chai</a></li>
+                            <li><a href="#services">Green Tea</a></li>
+                            <li><a href="#services">Kulhad Chai</a></li>
+                            <li><a href="#services">Special Blends</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-t-6 col-p-12">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#why-us">Why Us</a></li>
+                            <li><a href="#testimonials">Reviews</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-t-12">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li>📍 Sec 15, Noida</li>
+                            <li>📞 +91 8750298789</li>
+                            <li>✉️ github.com/theyashcode </li>
+                            
+                        </ul>
+                        <div class="social-links" style="margin-top:15px; display:flex; gap:10px;">
+                            <a href="#" class="social-btn">f</a>
+                            <a href="#" class="social-btn">in</a>
+                            <a href="#" class="social-btn">ig</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="last">
+                <p>© 2024 Office Wali Chai. All rights reserved. Built with ❤️ by Codewihyash</p>
+                <p>Privacy Policy · Terms of Service</p>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> Codewithyash | All Rights Reserved</p>
-        </div>
-    </footer>
+    </div>
 
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        // ── Tab switching ──
+        document.querySelectorAll('.tab li').forEach((li) => {
+            li.querySelector('.vertical').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.tab li').forEach(l => l.classList.remove('active'));
+                li.classList.add('active');
+            });
+        });
+
+        // ── Smooth scroll ──
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+
+        // ── Counter animation ──
+        function animateCounters() {
+            document.querySelectorAll('.counter').forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const step = Math.ceil(target / 60);
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) { counter.textContent = target + '+'; clearInterval(timer); }
+                    else { counter.textContent = current; }
+                }, 30);
+            });
+        }
+        const statsSection = document.querySelector('.info');
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) { animateCounters(); observer.disconnect(); }
+        }, { threshold: 0.3 });
+        if (statsSection) observer.observe(statsSection);
+
+        // ── Hamburger menu ──
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-open');
+            });
+        }
+
+        // ── Contact form ──
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('formSuccess').style.display = 'block';
+                form.reset();
+                setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 4000);
+            });
+        }
+
+        // ── Scroll active nav ──
+        const sections = document.querySelectorAll('section[id], div[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+            });
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('nav-active');
+                if (a.getAttribute('href') === '#' + current) a.classList.add('nav-active');
+            });
+        });
     </script>
-  
+
 </body>
 </html>
